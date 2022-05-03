@@ -1,5 +1,5 @@
 package com.aloha.dao;
-//test push
+
 import com.aloha.utils.JDBCUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
