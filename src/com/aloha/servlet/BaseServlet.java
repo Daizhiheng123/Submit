@@ -21,8 +21,7 @@ public abstract class BaseServlet extends HttpServlet {
         String URI = request.getRequestURI();
         String action = WebUtils.parseURI(URI);
         try {
-            Method method = this.getClass().getDeclaredMethod(action,
-                    HttpServletRequest.class, HttpServletResponse.class);
+            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
             method.invoke(this, request, response);
         } catch (Exception e) {
             e.printStackTrace();
